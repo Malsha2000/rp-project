@@ -5,6 +5,7 @@ import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
+import PersonIcon from '@mui/icons-material/Person';
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
@@ -31,9 +32,10 @@ const Sidebar = () => {
     >
       {/* logo */}
       <div className="logo">
-        <img src={Logo} alt="logo" />
+        <PersonIcon style={{width: 40, height: 40}}/>
+        {/* <img src={Logo} alt="logo" /> */}
         <span>
-          Sh<span>o</span>ps
+          Admin
         </span>
       </div>
 

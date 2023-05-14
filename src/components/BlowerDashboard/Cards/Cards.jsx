@@ -1,13 +1,13 @@
 import React from "react";
 import "./Cards.css";
-import { cardsData } from "../../Data/Data";
+import { blowerCardsData } from "../../../Data/BlowerData";
 
-import Card from "../Card/Card";
+import Card from "../Card/Card"
 
 const Cards = () => {
   return (
-    <div className="Cards">
-      {cardsData.map((card, id) => {
+    <div className="Cards" style={{marginBottom: 400}}>
+      {blowerCardsData.map((card, id) => {
         return (
           <div className="parentContainer" key={id}>
             <Card
